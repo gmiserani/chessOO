@@ -4,7 +4,7 @@ public class Rock extends ChessPiece {
 			int desColumn, int[][] playerMatrix) {
 		if (startRow != desRow && startColumn != desColumn) {
 			// If moved diagonal
-			strErrorMsg = "Rock can only move Horiztonal or Vertical";
+			
 			return false;
 		}
 		// Since Queen shares the same movement as a bishop or rock, the path

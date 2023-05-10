@@ -22,8 +22,8 @@ public class King extends ChessPiece {
 			return true;
 		} else if (desRow == (startRow + 1) && desColumn == (startColumn + 1)) { // SE
 			return true;
-		} else {
-			strErrorMsg = "King can only move one space in any direction";
+		}
+		else{
 			return false;
 		}
 	}

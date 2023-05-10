@@ -2,7 +2,6 @@ public class Knight extends ChessPiece {
 
 	public boolean legalMove(int startRow, int startColumn, int desRow,
 			int desColumn, int[][] playerMatrix) {
-		strErrorMsg = "Horse can only move in a L shape";
 
 		finalDesRow = desRow;
 		finalDesColumn = desColumn;

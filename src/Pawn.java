@@ -14,7 +14,6 @@ public class Pawn extends ChessPiece {
 		if ((currentPlayer == 1 && desRow >= startRow)
 				|| (currentPlayer == 2 && desRow <= startRow)) {
 			// If moving in wrong direction
-			strErrorMsg = "Ilegal move";
 			legalMove = false;
 
 		} else if (desColumn != startColumn) {
@@ -27,15 +26,12 @@ public class Pawn extends ChessPiece {
 
 					if (playerMatrix[desRow][desColumn] == 0) {
 						// If cell is empty
-						strErrorMsg = "Ilegal move";
 						legalMove = false;
 					}
 				} else {
-					strErrorMsg = "Ilegal move";
 					legalMove = false;
 				}
 			} else {
-				strErrorMsg = "Ilegal move";
 				legalMove = false;
 			}
 		} else if ((currentPlayer == 1 && desRow < (startRow - 1))
@@ -46,11 +42,9 @@ public class Pawn extends ChessPiece {
 				// If moved two places
 				if (playerPawnStart[currentPlayer - 1] != startRow) {
 					// If not at pawn starting place
-					strErrorMsg = "Ilegal move";
 					legalMove = false;
 				}
 			} else {
-				strErrorMsg = "Ilegal move";
 				legalMove = false;
 			}
 		}
